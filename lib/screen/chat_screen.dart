@@ -25,7 +25,7 @@ class _ChatScreenState extends State<ChatScreen> {
     _controller.clear();
 
     try {
-      String botResponse = await geminiService.getResponse(userMessage); // Use the service
+      String botResponse = await geminiService.getResponse(userMessage);
       setState(() {
         messages.add("Bot: $botResponse");
       });
